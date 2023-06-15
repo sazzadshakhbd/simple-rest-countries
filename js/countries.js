@@ -18,4 +18,28 @@ const getCountryHtml = country => {
         </div>
     `
 }
+
+
+// Destructureing Option 1
+
+// const getCountryHtml = country => {
+//     const {name, flags} = country;
+//     return `
+//         <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src=${flags.png} />
+//         </div>
+//     `
+// }
+
+
+// Destructureing Option 2
+// const getCountryHtml = ({name, flags}) => {
+//     return `
+//         <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src=${flags.png} />
+//         </div>
+//     `
+// }
 loadCountries();
